@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+
+.dashboard-container {
+    text-align: center;
+    background: #EAEAEAFF;
+    padding-top: 30px;
+}
+
+.dashboard-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 44px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color:#1D94FE;
+}
+
+.brand-section {
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.brand-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.car-slide {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.car-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: white;
+    transition: transform 0.3s ease-in-out;
+}
+.car-overlay {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.car-slide:hover .car-image {
+    transform: translateY(-20px);
+}
+
+.car-slide:hover .car-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 768px) {
+    .dashboard-title {
+        font-size: 34px;
+    }
+
+    .brand-title {
+        font-size: 26px;
+    }
+
+    .car-slide {
+        max-width: 250px;
+    }
+}

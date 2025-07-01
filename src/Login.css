@@ -1,0 +1,127 @@
+.body {
+    background-image: url('Images/Rent\ Hub.jpeg');
+    background-size: contain;
+    background-position: 15% center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 200vh;
+    margin: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login-container {
+    width: 329.45px;
+    height: auto;
+    padding: 50px;
+    border: 2px solid #1d94fe;
+    text-align: center;
+    background: #eaeaeaff; /* Soft background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 5%;
+    left: 62%;
+}
+
+.h1 {
+    font-size: 28px;
+    color: #1d94fe; /* Primary blue header */
+}
+
+.label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #1d94fe; /* Primary blue labels */
+    margin: 10px 0 5px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #1d94fe;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.error-text {
+    color: #ff4d4d;
+    font-size: 12px;
+}
+
+/* Default button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Primary login button */
+.login-button {
+    background-color: #1d94fe;
+    color: #ffffff;
+    width: 200px;
+}
+
+.login-button:hover {
+    background-color: #1584e0;
+}
+
+/* Secondary button (register) */
+.login-button-2 {
+    background-color: #ffffff;
+    color: #1d94fe;
+    border: 2px solid #1d94fe;
+    width: 200px;
+}
+
+.login-button-2:hover {
+    background-color: #e0f2ff;
+}
+
+/* Moving Car Animation */
+.moving-car {
+    position: absolute;
+    top: 83%;
+    right: -150px;
+    width: 180px;
+    animation: drive 3.5s linear forwards;
+    image-rendering: high-quality;
+}
+/*car starts off screen: -190px */
+@keyframes drive {
+    from {
+        right: -190px;
+    }
+    to {
+        right: 20%;
+    }
+}
+/*when car stops animation stops playing nd car stops at 20% right*/
+.parked {
+    animation: none;
+    right: 20%;
+    position: absolute;
+}
+/*moves login form slightly upwards*/
+.moved-up {
+    transform: translateY(-20px);
+}
+
+/* mobile Responsive designs */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        right: 50%;
+    }
+}

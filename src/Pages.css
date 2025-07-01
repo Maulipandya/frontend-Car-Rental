@@ -1,0 +1,47 @@
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 38px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: sticky;
+    top: 0px;
+    background-color:#1D94FE;
+    padding: 12px 20px;
+    text-align: center;
+    z-index: 999;
+    border-radius: 8px;
+    margin-bottom: 130px;
+}
+.car-card {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.car-image {
+    width: 130px;
+    height:auto;
+    border-radius: 10px;
+
+}
+
+.car-image:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 8px 20px rgba(255, 182, 193, 0.5);
+}
+
+.accordion-wrapper {
+    transition: background-color 0.3s ease;
+}
+
+.accordion-wrapper:hover {
+    background-color: rgba(188, 39, 174, 0.2);
+}
+
